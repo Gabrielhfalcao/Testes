@@ -362,6 +362,7 @@ function mostrarDivResultadoConsulta(){
     var a12 = document.getElementById('dropdownMenuTipoDeCobranca');
     var a13 = document.getElementById('controleTarCorpo2');
     var a14 = document.getElementById('controleTar2');
+    var a15 = document.getElementById('body');
     var divResultado = document.getElementById('divResultadoConsulta');
 
     a1.style.filter = 'blur(10px)';
@@ -378,7 +379,8 @@ function mostrarDivResultadoConsulta(){
     a12.style.filter = 'blur(10px)';
     a13.style.filter = 'blur(10px)';
     a14.style.filter = 'blur(10px)';
-    divResultado.style.display = 'block'
+    a15.style.overflow = 'hidden';
+    divResultado.style.display = 'block';
 }
 
 function fecharDivResultadoConsultaSemRetorno(){
@@ -396,6 +398,7 @@ function fecharDivResultadoConsultaSemRetorno(){
     var a12 = document.getElementById('dropdownMenuTipoDeCobranca');
     var a13 = document.getElementById('controleTarCorpo2');
     var a14 = document.getElementById('controleTar2');
+    var a15 = document.getElementById('body');
     var divResultado = document.getElementById('divResultadoConsulta');
 
     a1.style.filter = 'blur(0px)';
@@ -412,6 +415,6 @@ function fecharDivResultadoConsultaSemRetorno(){
     a12.style.filter = 'blur(0px)';
     a13.style.filter = 'blur(0px)';
     a14.style.filter = 'blur(0px)';
-    a14.style.zIndex = '0';
+    a15.style.overflow = 'auto';
     divResultado.style.display = 'none';
 }
