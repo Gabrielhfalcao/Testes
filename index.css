@@ -1,0 +1,540 @@
+body{
+    margin: 0px;
+    background: linear-gradient(180deg, darkgray, darkgray);
+}
+
+textarea:focus, input:focus, select:focus {
+    outline: 0;
+}
+
+.cabecalho{
+    display: flex;
+    background-color: rgb(153, 17, 17);
+    width: 100%;
+    height: 70px;
+    color: white;
+    line-height: 70px;
+}
+
+.rodapeCabecalho{
+    background-color: rgb(238, 134, 15);
+    width: 100%;
+    height: 4px;
+    margin-bottom: 20px;
+}
+
+.bnbLogo{
+    padding-left: 80px;
+    margin-right: 30px;
+}
+
+.titulo{
+    font-size: 14px;
+}
+
+.rodape{
+    width: 100%;
+    text-align: center;
+    line-height: 2px;
+}
+
+#tituloRodape{
+    font-size: 14px;
+    color: rgb(105, 105, 105);
+}
+
+#paragrafoRodape{
+    font-size: 14px;
+    color: rgb(105, 105, 105);
+}
+
+.controleTar{
+    display: flex;
+    background-color: rgb(153, 17, 17);
+    width: 90%;
+    height: 70px;
+    color: white;
+    line-height: 70px;
+    margin: auto;
+    padding-left: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.rodapeControleTar{
+    background-color: rgb(238, 134, 15);
+    width: 90%;
+    height: 4px;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+.controleTarCorpo{
+    width: 90%;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 20px;
+    height: fit-content;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 10px 5px 10px 5px rgba(141, 141, 141, 0.7);
+    position: relative;
+}
+
+.quadrosBusca{
+    width: 100%;
+}
+
+.tipoDeCobranca{
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-left: 5px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    color: gray;
+    transition: .5s;
+}
+
+.tipoDeCobranca:hover{
+    background-color: rgb(231, 231, 231);
+    border: 1px solid orange;
+    border-radius: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    transition: .5s;
+}
+
+.dropdownMenuTipoDeCobranca{
+    height: fit-content;
+    width: 88.2%;
+    position: absolute;
+    z-index:1000;
+    display: none;
+    box-shadow: 10px 5px 5px 5px rgba(77, 77, 77, .6);
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    border-end-start-radius: 5px;
+    border-end-end-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdownMenuTipoDeCobranca a:link{
+    color: white;
+    text-decoration: none;
+}
+
+.dropdownMenuTipoDeCobranca a:visited{
+    color: white;
+}
+
+.agencia{
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-left: 5px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    color: gray;
+    transition: .5s;
+}
+
+.agencia:hover{
+    background-color: rgb(231, 231, 231);
+    border: 1px solid orange;
+    border-radius: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    transition: .5s;
+}
+
+.dropdownMenuAgencia{
+    height: 300px;
+    overflow: auto;
+    width: 88.2%;
+    position: absolute;
+    z-index:1000;
+    display: none;
+    box-shadow: 10px 5px 5px 5px rgba(77, 77, 77, .6);
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    border-end-start-radius: 5px;
+    border-end-end-radius: 5px;
+}
+
+.dropdownMenuAgencia::-webkit-scrollbar {
+    width: 10px;             
+}
+  
+.dropdownMenuAgencia::-webkit-scrollbar-track {
+    background: rgb(61, 61, 61);       
+}
+  
+.dropdownMenuAgencia::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);  
+    border-radius: 20px;       
+    border: 2px solid rgb(61, 61, 61);       
+}
+  
+
+.dropdownMenuAgencia a:link{
+    color: white;
+    text-decoration: none;
+}
+
+.dropdownMenuAgencia a:visited{
+    color: white;
+}
+
+
+.status{
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-left: 5px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    color: gray;
+    transition: .5s;
+}
+
+.status:hover{
+    background-color: rgb(231, 231, 231);
+    border: 1px solid orange;
+    border-radius: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    transition: .5s;
+}
+
+.dropdownMenuStatus{
+    height: fit-content;
+    overflow: hidden;
+    width: 88.2%;
+    position: absolute;
+    z-index:1000;
+    display: none;
+    box-shadow: 10px 5px 5px 5px rgba(77, 77, 77, .6);
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    border-end-start-radius: 5px;
+    border-end-end-radius: 5px;
+}
+
+.dropdownMenuStatus a:link{
+    color: white;
+    text-decoration: none;
+}
+
+.dropdownMenuStatus a:visited{
+    color: white;
+}
+
+
+.tipoDeData{
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-left: 5px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    color: gray;
+    transition: .5s;
+}
+
+.tipoDeData:hover{
+    background-color: rgb(231, 231, 231);
+    border: 1px solid orange;
+    border-radius: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    transition: .5s;
+}
+
+.dropdownMenuTipoDeData{
+    height: fit-content;
+    overflow: auto;
+    width: 88.2%;
+    position: absolute;
+    z-index:1000;
+    display: none;
+    box-shadow: 10px 5px 5px 5px rgba(77, 77, 77, .6);
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    border-end-start-radius: 5px;
+    border-end-end-radius: 5px;
+}
+
+.dropdownMenuTipoDeData::-webkit-scrollbar {
+    width: 10px;             
+}
+  
+.dropdownMenuTipoDeData::-webkit-scrollbar-track {
+    background: rgb(61, 61, 61);       
+}
+  
+.dropdownMenuTipoDeData::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);  
+    border-radius: 20px;       
+    border: 2px solid rgb(61, 61, 61);       
+}
+  
+
+.dropdownMenuTipoDeData a:link{
+    color: white;
+    text-decoration: none;
+}
+
+.dropdownMenuTipoDeData a:visited{
+    color: white;
+}
+
+
+.opcoesDropdown{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 5px;
+    transition: .5s;
+}
+
+.opcoesDropdown:hover{
+    background-color: orange;
+    transition: .5s;
+}
+
+input{
+    width: 100%;
+    border: 1px solid gray;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.bottonsConsulta{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.divResultadoConsulta{
+    width: 500px;
+    height: 180px;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;
+    background-color: rgb(212, 212, 212);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 5px 5px 1005px rgba(44, 44, 44, 0.5);
+    display: none;
+}
+
+.cabecalhoDivResultadoConsulta{
+    background-color: rgb(153, 17, 17);
+    padding-left: 20px;
+    width: 100%;
+    height: 50px;
+    color: white;
+    line-height: 50px;
+}
+
+.rodapeCabecalhoDivResultadoConsulta{
+    background-color: rgb(238, 134, 15);
+    width: 100%;
+    height: 4px;
+}
+
+.corpoDivResultadoConsulta{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.buttonFecharDivResultadoConsulta{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(172, 3, 3);
+    margin: auto;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+    transition: .5s;
+}
+
+.buttonFecharDivResultadoConsulta:hover{
+    box-shadow: 10px 5px 5px 5px rgba(53, 53, 53, 0.5);
+    background-color: rgb(219, 12, 12);
+    transition: .5s;
+    
+}
+
+.consultar{
+    width: 150px;
+    height: 40px;
+    color: white;
+    font-size: 14px;
+    background-color: rgb(238, 134, 15);
+    margin-right: 10px;
+    border-radius: 5px;
+    line-height: 40px;
+    text-align: center;
+    transition: 1s;
+}
+
+.consultar:hover{
+    background-color: rgb(165, 93, 11);
+    transition: .5s;
+    box-shadow: 10px 5px 5px 5px rgba(141, 141, 141, 0.7);
+}
+
+.limpar{
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    background-color: rgb(168, 168, 168);
+    border-radius: 5px;
+    line-height: 40px;
+    text-align: center;
+    transition: 1s;
+}
+
+.limpar:hover{
+    background-color: rgb(168, 168, 168);
+    box-shadow: 10px 5px 5px 5px rgba(141, 141, 141, 0.7);
+    transition: .5s;
+}
+
+.btnCadastrarCobranca{
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    height: 40px;
+    color: white;
+    font-size: 14px;
+    background-color: rgb(238, 134, 15);
+    margin-right: 0px;
+    border-radius: 5px;
+    line-height: 40px;
+    text-align: center;
+    transition: 1s;
+}
+
+.btnCadastrarCobranca:hover{
+    background-color: rgb(165, 93, 11);
+    transition: .5s;
+    box-shadow: 10px 5px 5px 5px rgba(141, 141, 141, 0.7);
+}
+
+.tabelaRegistros{
+    font-size: 12px;
+    margin: auto;
+    width: 95%;
+    border-bottom: 2px solid rgb(202, 202, 202);
+    height: fit-content;
+    padding-bottom: 10px;
+}
+
+.resultadoConsulta{
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: 14px;
+    width: 95%;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    margin-bottom: 40px;
+    margin: auto;
+}
+
+.btns{
+    display: flex;
+}
+
+.avancarRetroceder{
+    padding-top: 30px;
+    width: 100%;
+   text-align: center;
+   margin: auto;
+}
+
+.btn-avancarRetroceder{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 150px;
+    background-color: rgb(236, 236, 236);
+    font-size: 12px;
+    color: rgb(199, 198, 198);
+}
+
+.btnsAR{
+    display: flex;
+    justify-content: center;
+}
+
+.btnsRegistros{
+    display: flex;
+}
+
+.btnEditarRegistros{
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    height: 40px;
+    color: white;
+    font-size: 14px;
+    background-color: rgb(238, 134, 15);
+    margin-right: 0px;
+    border-radius: 5px;
+    line-height: 40px;
+    text-align: center;
+    transition: 1s;
+}
+
+.btnEditarRegistros:hover{
+    background-color: rgb(165, 93, 11);
+    transition: .5s;
+    box-shadow: 10px 5px 5px 5px rgba(141, 141, 141, 0.7);
+}
+
+.tabelaRegistros p{
+    text-align: center;
+}
+
+.btnCancelarBusca{
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    height: 40px;
+    color: white;
+    font-size: 14px;
+    background-color: rgb(201, 11, 11);
+    margin-right: 0px;
+    border-radius: 5px;
+    line-height: 40px;
+    text-align: center;
+    transition: 1s;
+}
+
+.btnCancelarBusca:hover{
+    background-color: rgb(146, 0, 0);
+    transition: .5s;
+    box-shadow: 10px 5px 5px 5px rgba(141, 141, 141, 0.7);
+}

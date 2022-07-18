@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div class="cabecalho" id="cabecalho">
+        <div class="img">
+            <img src="./imagens/bnb-logo-min.png.xhtml.png" alt="" class="bnbLogo" id="bnbLogo">
+        </div>
+
+        <div class="titulo" id="titulo">
+            <p>s420-tarifas</p>
+        </div>
+    </div>
+
+    <div class="rodapeCabecalho" id="rodapeCabecalho"></div>
+
+    <div class="controleTar" id="controleTar">
+        <p><b>Controle de Tarifa - Lista</b></p>
+    </div>
+
+    <div class="rodapeControleTar"></div>
+
+    <div class="controleTarCorpo" id="controleTarCorpo">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="quadrosBusca" id="quadrosBusca">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p style="margin: 0px">CPF/CNPJ:</p>
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" name="" id="inputCPF" onclick="clicarCPF()" oninput="clicarCPF()" onblur="sairCPF()" onchange="sairCPF()" placeholder="CPF/CNPJ" style="border-radius: 5px; padding-left: 5px; color: gray; margin-bottom: 30px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="quadrosBusca">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p style="margin: 0px">Tipo de Cobrança:</p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="tipoDeCobranca" style="display: flex" id="tipoDeCobranca" onmouseenter="aparecerDropdownTipoDeCobranca()" onmouseleave="sumirDropdownTipoDeCobranca()">
+                                        <p style="margin-bottom: 2px" id="TipoDeCobrancaMarcado">Todos</p>
+                                        <img src="imagens/angulo-pequeno-para-baixo (1).png" width="20px" height="20px" alt="" style="position:absolute; right: 15px; bottom: 2px;">
+                                    </div>
+
+                                    <div class="dropdownMenuTipoDeCobranca" id="dropdownMenuTipoDeCobranca" onmouseenter="permanecerDropdownTipoDeCobranca()" onmouseleave="sairDropdownTipoDeCobranca()">
+                                        <a href="#"><div class="opcoesDropdown" id="todos" onclick="todos()">Todos</div></a>
+                                                
+                                        <a href="#"><div class="opcoesDropdown" id="contaCorrente" onclick="contaCorrente()">Conta Corrente</div></a>
+                                                
+                                        <a href="#"><div class="opcoesDropdown" id="boleto" onclick="boleto()">Boleto</div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="quadrosBusca">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p style="margin: 0px">Agência:</p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="agencia" style="display: flex" id="agencia" onmouseenter="aparecerDropdownAgencia()" onmouseleave="sumirDropdownAgencia()">
+                                        <p style="margin-bottom: 2px" id="agenciaMarcado">Todos</p>
+                                        <img src="imagens/angulo-pequeno-para-baixo (1).png" width="20px" height="20px" alt="" style="position:absolute; right: 15px; bottom: 2px;">
+                                    </div>
+
+                                    <div class="dropdownMenuAgencia" id="dropdownMenuAgencia" onmouseenter="permanecerDropdownAgencia()" onmouseleave="sairDropdownAgencia()">
+                                        <a href="#"><div class="opcoesDropdown" id="todosAgencia" onclick="todosAgencia()">Todos</div></a>
+                                        <a href="#"><div class="opcoesDropdown" id="direcaoGeral" onclick="direcaoGeral()">1 - Direção Geral</div></a>
+                                        <a href="#"><div class="opcoesDropdown" id="alagoaGrande" onclick="alagoGrande()">2 - Alagoa Grande</div></a>
+                                        <a href="#"><div class="opcoesDropdown" id="morroDoChapeu" onclick="morroDoChapeu()">3 - Morro do Chapeu</div></a>
+                                        <a href="#"><div class="opcoesDropdown" id="angicos" onclick="angicos()">4 - Angicos</div></a>
+                                        <a href="#"><div class="opcoesDropdown" id="aracajuCentro" onclick="aracajuCentro()">5 - Aracaju Centro</div></a>
+                                        <a href="#"><div class="opcoesDropdown" id="Arapiraca" onclick="arapiraca()">6 - Arapiraca</div></a>
+                                        <a href="#"><div class="opcoesDropdown" id="batalha" onclick="batalha()">7 - Batalha</div></a>
+                                        <a href="#"><div class="opcoesDropdown">8 - Bezerros</div></a>
+                                        <a href="#"><div class="opcoesDropdown">9 - Campina Grande</div></a>
+                                        <a href="#"><div class="opcoesDropdown">9 - Campos Sales</div></a>
+                                        <a href="#"><div class="opcoesDropdown">1 - Direção Geral</div></a>
+                                        <a href="#"><div class="opcoesDropdown">2 - Alagoa Grande</div></a>
+                                        <a href="#"><div class="opcoesDropdown">3 - Morro do Chapeu</div></a>
+                                        <a href="#"><div class="opcoesDropdown">4 - Angicos</div></a>
+                                        <a href="#"><div class="opcoesDropdown">5 - Aracaju Centro</div></a>
+                                        <a href="#"><div class="opcoesDropdown">6 - Arapiraca</div></a>
+                                        <a href="#"><div class="opcoesDropdown">7 - Batalha</div></a>
+                                        <a href="#"><div class="opcoesDropdown">8 - Bezerros</div></a>
+                                        <a href="#"><div class="opcoesDropdown">9 - Campina Grande</div></a>
+                                        <a href="#"><div class="opcoesDropdown">9 - Campos Sales</div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="quadrosBusca">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-8">
+                                    <p style="margin: 0px">Conta:</p>
+                                </div>
+                                <div class="col-4">
+                                    <p style="margin: 0px">DV:</p>
+                                </div>
+                                <div class="col-8">
+                                    <input  onclick="clicarConta()" oninput="clicarConta()" onblur="sairConta()" onchange="sairConta()" type="text" name="" id="inputConta"  style="border-radius: 5px; padding-left: 5px; color: gray">
+                                </div>
+                                <div class="col-4">
+                                    <input onclick="clicarDV()" oninput="clicarDV()" onblur="sairDV()" onchange="sairDV()" type="text" name="" id="inputDV" style="border-radius: 5px; padding-left: 5px; color: gray">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="quadrosBusca">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p style="margin: 0px">Status:</p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="status" style="display: flex" id="status" onmouseenter="aparecerDropdownStatus()" onmouseleave="sumirDropdownStatus()">
+                                        <p style="margin-bottom: 2px" id="statusMarcado">Todos</p>
+                                        <img src="imagens/angulo-pequeno-para-baixo (1).png" width="20px" height="20px" alt="" style="position:absolute; right: 15px; bottom: 2px;">
+                                    </div>
+
+                                    <div class="dropdownMenuStatus" id="dropdownMenuStatus" onmouseenter="permanecerDropdownStatus()" onmouseleave="sairDropdownStatus()">
+                                        <a href="#"><div class="opcoesDropdown" id="todosStatus" onclick="todosStatus()">Todos</div></a>
+                                                
+                                        <a href="#"><div class="opcoesDropdown" id="naoPaga" onclick="naoPaga()">Não Paga</div></a>
+                                                
+                                        <a href="#"><div class="opcoesDropdown" id="aguardandoPagamento" onclick="aguardandoPagamento()">Aguardando Pagamento</div></a>
+
+                                        <a href="#"><div class="opcoesDropdown" id="estornada" onclick="estornada()">Estornada</div></a>
+
+                                        <a href="#"><div class="opcoesDropdown" id="suspensa" onclick="suspensa()">Suspensa</div></a>
+
+                                        <a href="#"><div class="opcoesDropdown" id="paga" onclick="paga()">Paga</div></a>
+
+                                        <a href="#"><div class="opcoesDropdown" id="cancelada" onclick="cancelada()">Cancelada</div></a>
+
+                                        <a href="#"><div class="opcoesDropdown" id="reativada" onclick="reativada()">Reativada</div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="quadrosBusca">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p style="margin: 0px">Tipo de Data:</p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="tipoDeData" style="display: flex" id="tipoDeData" onmouseenter="aparecerDropdownTipoDeData()" onmouseleave="sumirDropdownTipoDeData()">
+                                        <p style="margin-bottom: 2px" id="tipoDeDataMarcado">Todos</p>
+                                        <img src="imagens/angulo-pequeno-para-baixo (1).png" width="20px" height="20px" alt="" style="position:absolute; right: 15px; bottom: 2px;">
+                                    </div>
+
+                                    <div class="dropdownMenuTipoDeData" id="dropdownMenuTipoDeData" onmouseenter="permanecerDropdownTipoDeData()" onmouseleave="sairDropdownTipoDeData()">
+                                        <a href="#"><div class="opcoesDropdown" id="dataDeLancamento" onclick="dataDeLancamento()">Data de Lançamentos</div></a>
+
+                                        <a href="#"><div class="opcoesDropdown" id="dataDeVencimento" onclick="dataDeVencimento()">Não Paga</div></a>
+                                                
+                                        <a href="#"><div class="opcoesDropdown" id="dataDePagamento" onclick="dataDePagamento()">Aguardando Pagamento</div></a>
+
+                                        <a href="#"><div class="opcoesDropdown" id="dataDeEstorno" onclick="dataDeEstorno()">Estornada</div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="quadrosBusca">
+                        <div class="col-12">
+                            <p style="margin: 0px">Período:</p>
+                        </div>
+                        <div class="col-12">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="date" name="" id="" style="border-radius: 5px; padding-left: 5px; color: gray">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="date" name="" id="" style="border-radius: 5px; padding-left: 5px; color: gray">
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-sm-12"></div>
+            </div>
+
+            <div class="bottonsConsulta">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6"></div>
+                        
+                        <div class="col-6 d-flex justify-content-end">
+                            <div class="consultar" onclick="mostrarDivResultadoConsulta()">
+                                <p>Consultar</p>
+                            </div>
+
+                            <div class="limpar">
+                                <p>Limpar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="controleTar" id="controleTar2">
+        <p><b>Lista de Cobranças de Tarifa</b></p>
+    </div>
+
+    <div class="rodapeControleTar" id="rodapeControleTar"></div>
+
+    <div class="controleTarCorpo" id="controleTarCorpo2">
+        <div class="btns">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="btnCadastrarCobranca">
+                            <p>Cadastrar Cobrança de Tarifas</p>
+                        </div>
+                    </div>    
+                    
+                    <div class="col-lg-6 col-md-12">
+                        <div class="btnsRegistros">
+                            <div class="btnEditarRegistros" onclick="EditarClick()">
+                                <p>Editar Vários Registros</p>
+                            </div>    
+
+                            <div class="btnCancelarBusca" style="display: none;" id="btnCancelar" onclick="CancelarSumir()">
+                                <p>Cancelar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabelaRegistros">
+            <div class="container">
+                <div class="row">
+                    <div class="col-1"><p>CÓDIGO LANÇAMENTO</p></div>
+                    <div class="col-2 "><p>DESCRIÇÃO RESUMIDA</p></div>
+                    <div class="col-2"><p>CÓDIGO DO CLIENTE</p></div>
+                    <div class="col-1"><p>ORIGEM</p></div>
+                    <div class="col-1"><p>STATUS</p></div>
+                    <div class="col-2"><p>DATA DO LANÇAMENTO</p></div>
+                    <div class="col-1"><p>DATA DO PAGAMENTO</p></div>
+                    <div class="col-1"><p>VALOR</p></div>
+                    <div class="col-1"><p>AÇÕES</p></div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="resultadoConsulta">
+            <p>Consulta sem Resultado</p>
+        </div>
+
+        <div class="avancarRetroceder">
+            <div class="btnsAR">
+                <div class="btn-avancarRetroceder">
+                    <p><</p>
+                </div>
+                    
+                <div class="btn-avancarRetroceder">
+                    <p><<</p>
+                </div>
+                        
+                <div class="btn-avancarRetroceder">
+                    <p>>></p>
+                </div>
+
+                <div class="btn-avancarRetroceder">
+                    <p>></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divResultadoConsulta" id="divResultadoConsulta">
+        <div class="cabecalhoDivResultadoConsulta">
+            <p>Atenção</p>
+        </div>
+        <div class="rodapeCabecalhoDivResultadoConsulta"></div>
+
+        <div class="corpoDivResultadoConsulta">
+            <p>Consulta sem resultado!</p>
+        </div>
+
+        <div class="buttonFecharDivResultadoConsulta" onclick="fecharDivResultadoConsultaSemRetorno()">
+            <p>Fechar</p>
+        </div>
+    </div>
+
+    <div class="rodape" id="rodape">
+        <p id="tituloRodape"><b>© Banco do Nordeste do Brasil</b></p>
+        <p id="paragrafoRodape">Versão 1.3.0</p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
