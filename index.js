@@ -1,3 +1,92 @@
+//Abrir Menu Lateral//
+
+function abrirMenuLateral(){
+    var a = document.getElementById('menuLateral');
+    a.style.transition = '.5s';
+    a.style.display = 'block';
+    a.style.left = '0px';
+    var b = document.getElementById('espacoBtnFecharMenuLateral');
+    b.style.display = 'block';
+    var c = document.getElementById('btnFecharMenuLateral');
+    c.style.display = 'block';
+    var a4 = document.getElementById('rodapeControleTar2');
+    var a5 = document.getElementById('rodape');
+    var a6 = document.getElementById('tituloRodape');
+    var a7 = document.getElementById('paragrafoRodape');
+    var a8 = document.getElementById('controleTar');
+    var a9 = document.getElementById('rodapeControleTar');
+    var a10 = document.getElementById('controleTarCorpo');
+    var a11 = document.getElementById('quadrosBusca');
+    var a12 = document.getElementById('dropdownMenuTipoDeCobranca');
+    var a13 = document.getElementById('controleTarCorpo2');
+    var a14 = document.getElementById('controleTar2');
+    var a15 = document.getElementById('body');
+    
+    a4.style.filter = 'blur(10px)';
+    a5.style.filter = 'blur(10px)';
+    a6.style.filter = 'blur(10px)';
+    a7.style.filter = 'blur(10px)';
+    a8.style.filter = 'blur(10px)';
+    a9.style.filter = 'blur(20px)';
+    a10.style.filter = 'blur(10px)';
+    a11.style.filter = 'blur(10px)';
+    a12.style.filter = 'blur(10px)';
+    a13.style.filter = 'blur(10px)';
+    a14.style.filter = 'blur(10px)';
+    a15.style.overflow = 'hidden';
+}
+
+function fecharMenuLateral(){
+    var a = document.getElementById('menuLateral');
+    a.style.transition = '.5s';
+    a.style.display = 'none';
+    a.style.left = '-260px';
+    var b = document.getElementById('espacoBtnFecharMenuLateral');
+    b.style.display = 'none';
+    var c = document.getElementById('btnFecharMenuLateral');
+    c.style.display = 'none';
+    var a4 = document.getElementById('rodapeControleTar2');
+    var a5 = document.getElementById('rodape');
+    var a6 = document.getElementById('tituloRodape');
+    var a7 = document.getElementById('paragrafoRodape');
+    var a8 = document.getElementById('controleTar');
+    var a9 = document.getElementById('rodapeControleTar');
+    var a10 = document.getElementById('controleTarCorpo');
+    var a11 = document.getElementById('quadrosBusca');
+    var a12 = document.getElementById('dropdownMenuTipoDeCobranca');
+    var a13 = document.getElementById('controleTarCorpo2');
+    var a14 = document.getElementById('controleTar2');
+    var a15 = document.getElementById('body');
+    
+    a4.style.filter = 'blur(0px)';
+    a5.style.filter = 'blur(0px)';
+    a6.style.filter = 'blur(0px)';
+    a7.style.filter = 'blur(0px)';
+    a8.style.filter = 'blur(0px)';
+    a9.style.filter = 'blur(0px)';
+    a10.style.filter = 'blur(0px)';
+    a11.style.filter = 'blur(0px)';
+    a12.style.filter = 'blur(0px)';
+    a13.style.filter = 'blur(0px)';
+    a14.style.filter = 'blur(0px)';
+    a15.style.overflow = 'auto';
+}
+
+//Mudar Cor do Botão fechar menu lateral//
+
+function mudarCorFecharMenuLateral(){
+    var a = document.getElementById('btnFecharMenuLateral');
+    a.style.transition = '.5s';
+    a.style.color = 'white';
+}
+
+function voltarCorFecharMenuLateral(){
+    var a = document.getElementById('btnFecharMenuLateral');
+    a.style.transition = '1s';
+    a.style.color = 'rgb(153, 17, 17)';
+}
+
+
 var a = document.getElementById('btnCancelar');
 
 function EditarClick(){
@@ -400,6 +489,80 @@ function fecharDivResultadoConsultaSemRetorno(){
     var a14 = document.getElementById('controleTar2');
     var a15 = document.getElementById('body');
     var divResultado = document.getElementById('divResultadoConsulta');
+
+    a1.style.filter = 'blur(0px)';
+    a2.style.filter = 'blur(0px)';
+    a3.style.filter = 'blur(0px)';
+    a4.style.filter = 'blur(0px)';
+    a5.style.filter = 'blur(0px)';
+    a6.style.filter = 'blur(0px)';
+    a7.style.filter = 'blur(0px)';
+    a8.style.filter = 'blur(0px)';
+    a9.style.filter = 'blur(0px)';
+    a10.style.filter = 'blur(0px)';
+    a11.style.filter = 'blur(0px)';
+    a12.style.filter = 'blur(0px)';
+    a13.style.filter = 'blur(0px)';
+    a14.style.filter = 'blur(0px)';
+    a15.style.overflow = 'auto';
+    divResultado.style.display = 'none';
+}
+
+//Função de cadastrar tarifas//
+
+function clicarCadastroTarifa(){
+    var a1 = document.getElementById('cabecalho');
+    var a2 = document.getElementById('rodapeCabecalho');
+    var a3 = document.getElementById('bnbLogo');
+    var a4 = document.getElementById('titulo');
+    var a5 = document.getElementById('rodape');
+    var a6 = document.getElementById('tituloRodape');
+    var a7 = document.getElementById('paragrafoRodape');
+    var a8 = document.getElementById('controleTar');
+    var a9 = document.getElementById('rodapeControleTar');
+    var a10 = document.getElementById('controleTarCorpo');
+    var a11 = document.getElementById('quadrosBusca');
+    var a12 = document.getElementById('dropdownMenuTipoDeCobranca');
+    var a13 = document.getElementById('controleTarCorpo2');
+    var a14 = document.getElementById('controleTar2');
+    var a15 = document.getElementById('body');
+    var divResultado = document.getElementById('divResultadoCadastrarCobranca');
+
+    a1.style.filter = 'blur(10px)';
+    a2.style.filter = 'blur(10px)';
+    a3.style.filter = 'blur(10px)';
+    a4.style.filter = 'blur(10px)';
+    a5.style.filter = 'blur(10px)';
+    a6.style.filter = 'blur(10px)';
+    a7.style.filter = 'blur(10px)';
+    a8.style.filter = 'blur(10px)';
+    a9.style.filter = 'blur(10px)';
+    a10.style.filter = 'blur(10px)';
+    a11.style.filter = 'blur(10px)';
+    a12.style.filter = 'blur(10px)';
+    a13.style.filter = 'blur(10px)';
+    a14.style.filter = 'blur(10px)';
+    a15.style.overflow = 'hidden';
+    divResultado.style.display = 'block';
+}
+
+function fecharDivCadastrarTarifa(){
+    var a1 = document.getElementById('cabecalho');
+    var a2 = document.getElementById('rodapeCabecalho');
+    var a3 = document.getElementById('bnbLogo');
+    var a4 = document.getElementById('titulo');
+    var a5 = document.getElementById('rodape');
+    var a6 = document.getElementById('tituloRodape');
+    var a7 = document.getElementById('paragrafoRodape');
+    var a8 = document.getElementById('controleTar');
+    var a9 = document.getElementById('rodapeControleTar');
+    var a10 = document.getElementById('controleTarCorpo');
+    var a11 = document.getElementById('quadrosBusca');
+    var a12 = document.getElementById('dropdownMenuTipoDeCobranca');
+    var a13 = document.getElementById('controleTarCorpo2');
+    var a14 = document.getElementById('controleTar2');
+    var a15 = document.getElementById('body');
+    var divResultado = document.getElementById('divResultadoCadastrarCobranca');
 
     a1.style.filter = 'blur(0px)';
     a2.style.filter = 'blur(0px)';

@@ -10,6 +10,10 @@
 </head>
 <body id="body">
     <div class="cabecalho" id="cabecalho">
+        <div class="btnmenuLateral" onclick="abrirMenuLateral()">
+            <img src="imagens/120px-Hamburger_icon_white.svg.png" id="menuSanduiche" alt="">
+        </div>
+        
         <div class="img">
             <img src="./imagens/bnb-logo-min.png.xhtml.png" alt="" class="bnbLogo" id="bnbLogo">
         </div>
@@ -20,12 +24,30 @@
     </div>
 
     <div class="rodapeCabecalho" id="rodapeCabecalho"></div>
+    
+    <div class="menuLateral" id="menuLateral">
+        <div class="tituloMenuLateral">
+            <p>Início</p>
+
+            <div class="imgHome">
+                <a href="index.html"><img src="imagens/silhueta-de-icone-de-casa.png" id="iconeCasa" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="espacoBtnFecharMenuLateral" id="espacoBtnFecharMenuLateral" onmouseenter="mudarCorFecharMenuLateral()" onmouseleave="voltarCorFecharMenuLateral()" onclick="fecharMenuLateral()">
+    </div>
+
+    <div class="btnFecharMenuLateral" id="btnFecharMenuLateral" onclick="fecharMenuLateral()">
+        <p>Fechar</p>
+    </div>
+
 
     <div class="controleTar" id="controleTar">
         <p><b>Controle de Tarifa - Lista</b></p>
     </div>
 
-    <div class="rodapeControleTar"></div>
+    <div class="rodapeControleTar" id="rodapeControleTar"></div>
 
     <div class="controleTarCorpo" id="controleTarCorpo">
         <div class="container">
@@ -244,14 +266,14 @@
         <p><b>Lista de Cobranças de Tarifa</b></p>
     </div>
 
-    <div class="rodapeControleTar" id="rodapeControleTar"></div>
+    <div class="rodapeControleTar" id="rodapeControleTar2"></div>
 
     <div class="controleTarCorpo" id="controleTarCorpo2">
         <div class="btns">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
-                        <div class="btnCadastrarCobranca">
+                        <div class="btnCadastrarCobranca" onclick="clicarCadastroTarifa()">
                             <p>Cadastrar Cobrança de Tarifas</p>
                         </div>
                     </div>    
@@ -324,6 +346,87 @@
 
         <div class="buttonFecharDivResultadoConsulta" onclick="fecharDivResultadoConsultaSemRetorno()">
             <p>Fechar</p>
+        </div>
+    </div>
+
+    <div class="divResultadoCadastrarCobranca" id="divResultadoCadastrarCobranca">
+        <div class="controleTarifaCadastrar" id="controleTarifaCadastrar">
+            <p><b>Controle de Tarifa - Cadastrar</b></p>
+        </div>
+    
+        <div class="rodapeControleTarifaCadastrar"></div>
+
+        <div class="controleTarifaCadastrarCorpo">
+            <div class="quadrosControleCadastro">
+                <div class="tituloFormQuadro">
+                    <p>Dados Lançamento</p>
+                </div>
+
+                <div class="quadroFormCadastro">   
+                </div>
+            </div>
+
+            <div class="quadrosControleCadastro">
+                <div class="tituloFormQuadro">
+                    <p>Dados Lançamento</p>
+                </div>
+                
+                <div class="quadroFormCadastro">   
+                </div>
+            </div>
+
+            <div class="quadrosControleCadastro">
+                <div class="tituloFormQuadro">
+                    <p>Dados Lançamento</p>
+                </div>
+                
+                <div class="quadroFormCadastro">   
+                </div>
+            </div>
+
+            <div class="quadrosControleCadastro">
+                <div class="tituloFormQuadro">
+                    <p>Dados Lançamento</p>
+                </div>
+                
+                <div class="quadroFormCadastro">   
+                </div>
+            </div>
+
+            <div class="quadrosControleCadastro">
+                <div class="tituloFormQuadro">
+                    <p>Dados Lançamento</p>
+                </div>
+                
+                <div class="quadroFormCadastro">   
+                </div>
+            </div>
+        </div>
+        
+        <div class="espacoBtnCadastro">
+            <div class="espacoBtnDivs">
+                <div class="espacoBtnDivs2">
+                    <div class="forma1"></div>
+
+                    <div class="espacoParaForma2">
+                        <div class="forma2">
+                            <div class="btnSalvarECobrarCadastro">
+                                <p>Salvar e Cobrar</p>
+                            </div>
+
+                            <div class="btnSalvarCadastro">
+                                <p>Salvar</p>
+                            </div>
+
+                            <div class="btnCancelarCadastro" onclick="fecharDivCadastrarTarifa()">
+                                <p>Cancelar</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="forma3"></div>
+                </div>
+            </div>
         </div>
     </div>
 
