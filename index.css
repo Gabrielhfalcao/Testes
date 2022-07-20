@@ -110,7 +110,7 @@ textarea:focus, input:focus, select:focus {
     z-index: 1000;
     color: rgb(153, 17, 17);
     text-align: center;
-    border: 1px solid rgb(153, 17, 17);
+    border: 5px solid rgb(153, 17, 17);
     box-sizing: border-box;
     transition: 1s;
     display: none;
@@ -119,7 +119,7 @@ textarea:focus, input:focus, select:focus {
 .espacoBtnFecharMenuLateral:hover{
     width: 260px;
     height: 45px;
-    border-top: 44px solid rgb(153, 17, 17);
+    border-top: 40px solid rgb(153, 17, 17);
     color: white;
     transition: .5s;
     overflow: hidden;

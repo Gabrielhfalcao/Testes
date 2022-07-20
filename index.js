@@ -87,14 +87,16 @@ function voltarCorFecharMenuLateral(){
 }
 
 
-var a = document.getElementById('btnCancelar');
+var btnCancelar = document.getElementById('btnCancelar');
 
 function EditarClick(){
-    a.style.display = 'flex';
+    btnCancelar.style.transition = '5s';
+    btnCancelar.style.display = 'flex';
 }
 
 function CancelarSumir(){
-    a.style.display = 'none';
+    btnCancelar.style.transition = '5s';
+    btnCancelar.style.display = 'none';
 }
 
 //Input CPF/CNPJ//
@@ -446,6 +448,7 @@ function mostrarDivResultadoConsulta(){
     var a7 = document.getElementById('paragrafoRodape');
     var a8 = document.getElementById('controleTar');
     var a9 = document.getElementById('rodapeControleTar');
+    var a9a = document.getElementById('rodapeControleTar2');
     var a10 = document.getElementById('controleTarCorpo');
     var a11 = document.getElementById('quadrosBusca');
     var a12 = document.getElementById('dropdownMenuTipoDeCobranca');
@@ -454,20 +457,37 @@ function mostrarDivResultadoConsulta(){
     var a15 = document.getElementById('body');
     var divResultado = document.getElementById('divResultadoConsulta');
 
+    a1.style.transition = '.5s';
     a1.style.filter = 'blur(10px)';
+    a2.style.transition = '.5s';
     a2.style.filter = 'blur(10px)';
+    a3.style.transition = '.5s';
     a3.style.filter = 'blur(10px)';
+    a4.style.transition = '.5s';
     a4.style.filter = 'blur(10px)';
+    a5.style.transition = '.5s';
     a5.style.filter = 'blur(10px)';
+    a6.style.transition = '.5s';
     a6.style.filter = 'blur(10px)';
+    a7.style.transition = '.5s';
     a7.style.filter = 'blur(10px)';
+    a7.style.transition = '.5s';
     a8.style.filter = 'blur(10px)';
+    a8.style.transition = '.5s';
     a9.style.filter = 'blur(10px)';
+    a9.style.transition = '.5s';
+    a9a.style.filter = 'blur(10px)';
+    a9a.style.transition = '.5s';
     a10.style.filter = 'blur(10px)';
+    a10.style.transition = '.5s';
     a11.style.filter = 'blur(10px)';
+    a12.style.transition = '.5s';
     a12.style.filter = 'blur(10px)';
+    a13.style.transition = '.5s';
     a13.style.filter = 'blur(10px)';
+    a14.style.transition = '.5s';
     a14.style.filter = 'blur(10px)';
+    a15.style.transition = '.5s';
     a15.style.overflow = 'hidden';
     divResultado.style.display = 'block';
 }
