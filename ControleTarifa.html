@@ -438,3 +438,50 @@
     <script src="index.js"></script>
 </body>
 </html>
+
+
+
+
+import os
+import csv
+import pandas as pd
+
+
+pasta = os.listdir("C:/Users/B900780/Desktop/Teste Excel")
+
+dados = []
+valores = []
+repeticoes = []
+listaFinal = []
+
+with open("teste.csv") as arquivocsv:
+    ler = csv.DictReader(arquivocsv, delimiter=";")
+    for linha in ler:
+        dados.append(linha)
+
+indice = 0
+while (indice < len(dados)):
+    valores.append(dados[indice]['Valores'])
+    indice += 1
+
+indice = 0
+while(indice < len(valores)):
+    ind = 0
+    while ind < 30:
+        repeticoes.append(valores[indice])
+        ind += 1    
+    indice += 1
+
+indice = 0
+while(indice < len(repeticoes)):
+    listaFinal.append(str(repeticoes[indice]))
+    indice += 1
+
+print(listaFinal)
+
+df = (pd.DataFrame(listaFinal)).style.set_properties(**{'text-align': 'center'})
+
+writer = pd.ExcelWriter("testeRepeticao.xlsx", engine='openpyxl')
+df.to_excel(writer, sheet_name='Dados', index=False)
+
+writer.close()
